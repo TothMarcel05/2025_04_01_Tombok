@@ -16,9 +16,8 @@ for (let i = 0; i < szamok.length; i++ ) {
     if (szamok[i] > atlag)  atlagfeletti++;
 }
 console.log(atlagfeletti);
-/*2. Tölts fel egy 100 elemű tömböt -50 és 50 közötti véletlenszámokkal!
 
-k. Háyn átlag alatti szám van a tömbben?*/
+//2. Tölts fel egy 100 elemű tömböt -50 és 50 közötti véletlenszámokkal!
 let szamok1 = [];
 for (let i = 0; i < 100; i++) {
     szamok1[i] = Math.floor(Math.random() * 101) - 50;
@@ -114,6 +113,21 @@ for (let i = 0; i < szamok1.length; i++ ) {
 }
 
 //j. Írd ki azon számok indexeit, amelyek 10 többszörösei!
+for (let i = 0; i < szamok1.length; i++ ) {
+    if (szamok1[i] % 10 == 0) console.log(i);
+}
+
+//k. Hány átlag alatti szám van a tömbben?
+let sum2 = 0;
+for (let i = 0; i < szamok1.length; i++ ) {
+  sum2 += szamok1[i];
+}
+let atlag2 = sum / szamok1.length;
+let atlagalatti = 0;
+for (let i = 0; i < szamok1.length; i++ ) {
+    if (szamok1[i] < atlag2)  atlagalatti++;
+}
+console.log(atlagalatti);
 
 
 
