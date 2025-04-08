@@ -129,5 +129,21 @@ for (let i = 0; i < szamok1.length; i++ ) {
 }
 console.log(atlagalatti);
 
+//autós feladat
+let autok = ["Mercedes", "BMW", "Audi", "Volvo", "Renault"];
+
+console.log("\nAutók: fordított")
+autok.reverse()
+for (i = 0; i < autok.length; i++) {
+    console.log(autok[i]);
+}
+
+console.log("\nAutók: rendezett")
+autok.sort()
+for (i = 0; i < autok.length; i++) {
+    console.log(autok[i]);
+}
+
+
 
 
